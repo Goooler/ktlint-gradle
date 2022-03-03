@@ -2,11 +2,25 @@ name: Build and check
 
 on:
   pull_request:
-    branches:
-      - master
+    paths-ignore:
+      - '.idea/**'
+      - '.gitattributes'
+      - '.github/**.json'
+      - '.gitignore'
+      - '**.md'
+      - 'LICENSE'
+      - 'NOTICE'
   push:
     branches:
       - master
+    paths-ignore:
+      - '.idea/**'
+      - '.gitattributes'
+      - '.github/**.json'
+      - '.gitignore'
+      - '**.md'
+      - 'LICENSE'
+      - 'NOTICE'
 
 jobs:
   validation:
