@@ -7,12 +7,9 @@ on:
 jobs:
   build:
     name: Changelog Entry Check
-
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v3
-
       - name: Grep CHANGES.md for PR number
         if: contains(github.event.pull_request.labels.*.name, 'skip news') != true
         run: |
