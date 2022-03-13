@@ -30,7 +30,7 @@ jobs:
           distribution: 'zulu'
       - uses: gradle/gradle-build-action@v2
       - name: Build plugin
-        run: ./plugin/gradlew -p ./plugin assemble ensureDependenciesAreInlined test --no-daemon
+        run: ./plugin/gradlew -p ./plugin assemble ensureDependenciesAreInlined test
       - name: Save test results
         uses: actions/upload-artifact@v3
         if: failure()
@@ -38,7 +38,7 @@ jobs:
           name: test-results
           path: plugin/build/reports/tests/test/
       - name: Check plugin codestyle
-        run: ./plugin/gradlew -p ./plugin ktlintCheck --no-daemon
+        run: ./plugin/gradlew -p ./plugin ktlintCheck
 
   check_bashisms:
     runs-on: ubuntu-latest
@@ -53,7 +53,7 @@ jobs:
       - name: Install checkbashisms
         run: sudo apt-get install -qq devscripts
       - name: Check git bashisms
-        run: ./gradlew addKtlintCheckGitPreCommitHook --no-daemon && checkbashisms .git/hooks/pre-commit
+        run: ./gradlew addKtlintCheckGitPreCommitHook && checkbashisms .git/hooks/pre-commit
 
   check_samples:
     strategy:
@@ -69,4 +69,4 @@ jobs:
           distribution: 'zulu'
       - uses: gradle/gradle-build-action@v2
       - name: Check ktlint-plugin on samples
-        run: ./gradlew ktlintCheck --no-daemon
+        run: ./gradlew ktlintCheck

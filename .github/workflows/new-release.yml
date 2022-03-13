@@ -22,8 +22,8 @@ jobs:
       - name: Publish plugin
         env:
           GITHUB_KEY: ${{ secrets.GithubKey }}
-        run: ./plugin/gradlew -p ./plugin publishPlugins --no-daemon
+        run: ./plugin/gradlew -p ./plugin publishPlugins
       - name: Create new Github release
         env:
           GITHUB_KEY: ${{ secrets.GITHUB_TOKEN }}
-        run: ./plugin/gradlew -p ./plugin githubRelease --no-daemon
+        run: ./plugin/gradlew -p ./plugin githubRelease
