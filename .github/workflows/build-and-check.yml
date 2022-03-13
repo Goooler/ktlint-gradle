@@ -32,7 +32,7 @@ jobs:
       - name: Build plugin
         run: ./plugin/gradlew -p ./plugin assemble ensureDependenciesAreInlined test --no-daemon
       - name: Save test results
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         if: failure()
         with:
           name: test-results
