@@ -124,7 +124,7 @@ dependencies {
 
     add("adapter49CompileOnly", "com.pinterest.ktlint:ktlint-core:0.49.1")
     add("adapter49CompileOnly", "com.pinterest.ktlint:ktlint-cli-reporter:0.49.1")
-    add("adapter49CompileOnly", "com.pinterest.ktlint:ktlint-rule-engine:0.49.1")
+    add("adapter49CompileOnly", "com.pinterest.ktlint:ktlint-rule-engine:0.50.0")
     add("adapter49CompileOnly", "com.pinterest.ktlint:ktlint-ruleset-standard:0.49.1")
     add("adapter49CompileOnly", "com.pinterest.ktlint:ktlint-reporter-baseline:0.49.1")
 
