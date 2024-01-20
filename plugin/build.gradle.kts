@@ -115,12 +115,12 @@ tasks.named<Jar>("shadowJar") {
 }
 
 dependencies {
-    add("adapterCompileOnly", "com.pinterest.ktlint:ktlint-core:0.34.0")
+    add("adapterCompileOnly", "com.pinterest.ktlint:ktlint-core:0.49.1")
     add("adapterImplementation", libs.commons.io)
     add("adapterImplementation", libs.semver)
 
-    add("adapter47CompileOnly", "com.pinterest.ktlint:ktlint-core:0.47.1")
-    add("adapter48CompileOnly", "com.pinterest.ktlint:ktlint-core:0.48.2")
+    add("adapter47CompileOnly", "com.pinterest.ktlint:ktlint-core:0.49.1")
+    add("adapter48CompileOnly", "com.pinterest.ktlint:ktlint-core:0.49.1")
 
     add("adapter49CompileOnly", "com.pinterest.ktlint:ktlint-core:0.49.1")
     add("adapter49CompileOnly", "com.pinterest.ktlint:ktlint-cli-reporter:0.49.1")
