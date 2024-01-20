@@ -10,7 +10,7 @@ gradleWrapperSha = "3e1af3ae886920c3ac87f7a91f816c0c7c436f276a6eefdb3da152100fef
 junit5 = "5.5.2"
 assertJ = "3.11.1"
 commonsIo = "2.8.0"
-archUnit = "0.23.1"
+archUnit = "1.2.1"
 
 [libraries]
 android-gradle-plugin = { module = "com.android.tools.build:gradle", version.ref = "androidPlugin" }
