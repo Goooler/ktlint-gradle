@@ -3,7 +3,7 @@ pluginManagement {
     plugins {
         id("org.jlleitschuh.gradle.ktlint") version latestRelease
         id("org.jetbrains.kotlin.jvm") version "1.9.10"
-        id("com.gradle.plugin-publish") version "0.15.0"
+        id("com.gradle.plugin-publish") version "1.2.1"
         `java-gradle-plugin`
         `maven-publish`
         id("com.github.johnrengelman.shadow") version "7.0.0"
